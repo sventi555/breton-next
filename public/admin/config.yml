@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/media"
+
+collections:
+  - name: "hello"
+    label: "Hello"
+    folder: "_posts/hello"
+    create: false
+    slug: "hello"
+    fields:
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Blurb", name: "blurb", widget: "markdown"}
+
+  - name: "performance"
+    label: "Performance"
+    folder: "_posts/performance"
+    create: false
+    slug: "performance"
+    fields:
+      - {label: "Resume", name: "resume", widget: "image"}
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        field: {label: "Link", name: "link", widget: string}
+
+  - name: "writing"
+    label: "Writing"
+    folder: "_posts/writing"
+    create: false
+    slug: "writing"
+    fields:
+      - {label: "Credits", name: "credits", widget: "markdown"}
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        field: {label: "Link", name: "link", widget: string}
