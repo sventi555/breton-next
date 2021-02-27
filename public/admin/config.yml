@@ -12,7 +12,6 @@ collections:
         label: "Hello"
         file: "_site/pages/hello.yml"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
           - {label: "Photo", name: "photo", widget: "image"}
           - {label: "Blurb", name: "body", widget: "markdown"}
 
@@ -20,7 +19,6 @@ collections:
         label: "Performance"
         file: "_site/pages/performance.yml"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
           - {label: "Resume", name: "resume", widget: "image"}
           - label: "Links"
             name: "links"
@@ -33,7 +31,6 @@ collections:
         label: "Writing"
         file: "_site/pages/writing.yml"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
           - {label: "Blurb", name: "body", widget: "markdown"}
           - label: "Links"
             name: "links"
