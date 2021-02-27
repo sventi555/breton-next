@@ -9,17 +9,19 @@ collections:
     label: "Hello"
     folder: "_posts/hello"
     create: true
-    slug: "hello"
+    slug: "{{slug}}"
     fields:
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Photo", name: "photo", widget: "image"}
-      - {label: "Blurb", name: "blurb", widget: "markdown"}
+      - {label: "Blurb", name: "body", widget: "markdown"}
 
   - name: "performance"
     label: "Performance"
     folder: "_posts/performance"
     create: true
-    slug: "performance"
+    slug: "{{slug}}"
     fields:
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Resume", name: "resume", widget: "image"}
       - label: "Links"
         name: "links"
@@ -30,9 +32,10 @@ collections:
     label: "Writing"
     folder: "_posts/writing"
     create: true
-    slug: "writing"
+    slug: "{{slug}}"
     fields:
-      - {label: "Credits", name: "credits", widget: "markdown"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Blurb", name: "body", widget: "markdown"}
       - label: "Links"
         name: "links"
         widget: "list"
