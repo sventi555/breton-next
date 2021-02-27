@@ -26,7 +26,9 @@ collections:
       - label: "Links"
         name: "links"
         widget: "list"
-        field: {label: "Link", name: "link", widget: string}
+        fields:
+          - {label: "Description", name: "description", widget: string}
+          - {label: "Link", name: "link", widget: string}
 
   - name: "writing"
     label: "Writing"
@@ -39,4 +41,6 @@ collections:
       - label: "Links"
         name: "links"
         widget: "list"
-        field: {label: "Link", name: "link", widget: string}
+        fields:
+          - {label: "Description", name: "description", widget: string}
+          - {label: "Link", name: "link", widget: string}
