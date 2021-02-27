@@ -5,7 +5,7 @@ backend:
 media_folder: "public/media"
 
 collections:
-  - label "Pages"
+  - label: "Pages"
     name: "pages"
     files:
       - name: "hello"
