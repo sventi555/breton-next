@@ -5,42 +5,39 @@ backend:
 media_folder: "public/media"
 
 collections:
-  - name: "hello"
-    label: "Hello"
-    folder: "_posts/hello"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Photo", name: "photo", widget: "image"}
-      - {label: "Blurb", name: "body", widget: "markdown"}
-
-  - name: "performance"
-    label: "Performance"
-    folder: "_posts/performance"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Resume", name: "resume", widget: "image"}
-      - label: "Links"
-        name: "links"
-        widget: "list"
+  - label "Pages"
+    name: "pages"
+    files:
+      - name: "hello"
+        label: "Hello"
+        file: "_site/pages/hello.yml"
         fields:
-          - {label: "Description", name: "description", widget: string}
-          - {label: "Link", name: "link", widget: string}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Photo", name: "photo", widget: "image"}
+          - {label: "Blurb", name: "body", widget: "markdown"}
 
-  - name: "writing"
-    label: "Writing"
-    folder: "_posts/writing"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Blurb", name: "body", widget: "markdown"}
-      - label: "Links"
-        name: "links"
-        widget: "list"
+      - name: "performance"
+        label: "Performance"
+        file: "_site/pages/performance.yml"
         fields:
-          - {label: "Description", name: "description", widget: string}
-          - {label: "Link", name: "link", widget: string}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Resume", name: "resume", widget: "image"}
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - {label: "Description", name: "description", widget: string}
+              - {label: "Link", name: "link", widget: string}
+
+      - name: "writing"
+        label: "Writing"
+        file: "_site/pages/writing.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Blurb", name: "body", widget: "markdown"}
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - {label: "Description", name: "description", widget: string}
+              - {label: "Link", name: "link", widget: string}
