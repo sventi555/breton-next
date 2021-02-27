@@ -1,0 +1,7 @@
+---
+title: Performance Page
+resume: /public/media/resume.png
+links:
+  - description: "SLICK RICK: emerging toronto rapper"
+    link: https://www.youtube.com/watch?v=7SRFREJmEFQ
+---
