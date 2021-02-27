@@ -8,7 +8,7 @@ collections:
   - name: "hello"
     label: "Hello"
     folder: "_posts/hello"
-    create: false
+    create: true
     slug: "hello"
     fields:
       - {label: "Photo", name: "photo", widget: "image"}
@@ -17,7 +17,7 @@ collections:
   - name: "performance"
     label: "Performance"
     folder: "_posts/performance"
-    create: false
+    create: true
     slug: "performance"
     fields:
       - {label: "Resume", name: "resume", widget: "image"}
@@ -29,7 +29,7 @@ collections:
   - name: "writing"
     label: "Writing"
     folder: "_posts/writing"
-    create: false
+    create: true
     slug: "writing"
     fields:
       - {label: "Credits", name: "credits", widget: "markdown"}
