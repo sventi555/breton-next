@@ -1,0 +1,25 @@
+.resume {
+    width: 90vw;
+}
+
+/* sm */
+@media (min-width: 640px) {
+    
+}
+
+/* md */
+@media (min-width: 768px) {
+    .resume {
+        width: 42rem;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    
+}
+
+/* xl */
+@media (min-width: 1280px) {
+
+}

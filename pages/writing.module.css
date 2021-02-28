@@ -1,0 +1,3 @@
+.writing-body > p {
+    @apply mb-4 overflow-hidden;
+}
