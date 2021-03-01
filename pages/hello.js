@@ -20,6 +20,10 @@ export default function Hello(props) {
                 <div className="my-10 mx-10 md:mx-5">
                     <h2 className="mb-3">hello</h2>
                     <p>{props.body}</p>
+                    <div className="flex my-5">
+                        <a href="https://www.instagram.com/bretonlikethecrackers/"><img className="w-11 mr-3" src="/static/images/instagram.png" /></a>
+                        <a href="https://www.imdb.com/name/nm6870964/"><img className="w-11" src="/static/images/imdb.png" /></a>
+                    </div>
                 </div>
             </main>
         </div>
