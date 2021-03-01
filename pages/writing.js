@@ -19,7 +19,7 @@ export default function Writing(props) {
             <header>
                 <Navbar />
             </header>
-            <main className="flex flex-col">
+            <main>
                 <h2 className="m-5">stuff i just wrote</h2>
                 <div className={`${styles['writing-body']} mx-5`} dangerouslySetInnerHTML={{__html:md.render(props.body)}}></div>
                 <div className="m-5">

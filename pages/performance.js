@@ -16,7 +16,7 @@ export default function Performance(props) {
             <header>
                 <Navbar />
             </header>
-            <main className="flex flex-col xl:flex-row">
+            <main className="flex items-start flex-col xl:flex-row">
                 <img className={`${styles.resume} mx-auto my-5 xl:m-5`} src={props.resume.replace('/public', '')} />
                 <div className="m-5 md:m-10">
                     <h3 className="mb-3">links to stuff</h3>
